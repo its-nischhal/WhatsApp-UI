@@ -25,6 +25,9 @@ class _SearchScreenState extends State<SearchScreen> {
               onChanged: (text){
                 setState(() {
                   searchText = text;
+                  if(searchText.length==0){
+                    searchText='@';
+                  }
                 });
 
               },
