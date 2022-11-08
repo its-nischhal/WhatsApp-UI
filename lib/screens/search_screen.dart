@@ -12,7 +12,7 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  String searchText = '';
+  String searchText = '@';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
