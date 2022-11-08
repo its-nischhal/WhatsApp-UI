@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../colors.dart';
-import '../info.dart';
+import 'package:whatsapp_ui/info.dart';
+import 'mobile_screen_layout.dart';
 
 class ArchiveScreen extends StatefulWidget {
   const ArchiveScreen({Key? key}) : super(key: key);
@@ -12,6 +11,7 @@ class ArchiveScreen extends StatefulWidget {
 }
 
 class _ArchiveScreenState extends State<ArchiveScreen> {
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -32,9 +32,10 @@ class _ArchiveScreenState extends State<ArchiveScreen> {
                   if(info[index]['isArchived']==true){
                     return InkWell(
                       onLongPress: (){
-                        setState(() {
                           info[index]['isArchived']=false;
-                        });
+                          setState(() {
+
+                          });
                       },
                       onTap: (){},
                       child: ListTile(

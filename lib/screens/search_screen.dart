@@ -47,11 +47,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   itemBuilder: (context,index) {
                     if(info[index]['name'].toString().contains(searchText)){
                       return InkWell(
-                        onLongPress: (){
-                          setState(() {
-                            info[index]['isArchived']=true;
-                          });
-                        },
+
                         onTap: (){},
                         child: ListTile(
 
